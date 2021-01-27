@@ -4,6 +4,6 @@ use App\Toto;
 
 require 'vendor/autoload.php';
 
-$toto = new Toto('hello');
+$_toto = new  Toto( ' hello');
 
-$toto->hello();
+$_toto->hello()  ;
