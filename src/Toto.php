@@ -2,16 +2,14 @@
 
 namespace App;
 
-class Toto
-{
-    private string $name;
-    public function __construct(string $name)
+class Toto{
+     public $_name;
+    public function __construct($name)
     {
-        $this->name = $name;
+        $this->_name = $name;
     }
 
-    public function hello(): void
-    {
+    public function hello(){
         echo 'hello ' . $this->name;
     }
 }
