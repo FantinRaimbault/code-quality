@@ -15,3 +15,11 @@ jobs:
         with:
           # If there isn't a PHPUnit config, specify files or directories to test
           command: tests/
+
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Say hello
+      - with:
+          script: ./my_script

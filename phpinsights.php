@@ -51,7 +51,8 @@ return [
     */
 
     'exclude' => [
-        //  'path/to/directory-or-file'
+        'phpinsights.php',
+        'hook.php'
     ],
 
     'add' => [
@@ -61,13 +62,14 @@ return [
     ],
 
     'remove' => [
-        //  ExampleInsight::class,
+        NunoMaduro\PhpInsights\Domain\Insights\ForbiddenNormalClasses::class,
+        NunoMaduro\PhpInsights\Domain\Insights\Composer\ComposerMustBeValid::class,
+        \PhpCsFixer\Fixer\StringNotation\SingleQuoteFixer::class,
+        SlevomatCodingStandard\Sniffs\TypeHints\DeclareStrictTypesSniff::class,
+        PHP_CodeSniffer\Standards\PSR2\Sniffs\Methods\FunctionClosingBraceSniff::class
     ],
 
     'config' => [
-        //  ExampleInsight::class => [
-        //      'key' => 'value',
-        //  ],
     ],
 
     /*
