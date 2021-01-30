@@ -21,4 +21,5 @@ jobs:
     steps:
       - uses: actions/checkout@master
         name: Say hello
-        run: ./my_script.sh
+        with:
+          script: ./my_script.sh
