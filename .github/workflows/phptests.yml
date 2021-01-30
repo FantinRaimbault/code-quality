@@ -19,6 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Say hello
-      - with:
+        name: Say hello
+        with:
           script: ./my_script
