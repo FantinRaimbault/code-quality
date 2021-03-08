@@ -12,5 +12,5 @@ if ($returnCode !== 0) {
 
 // Show summary (last line)
 echo array_pop($output) . PHP_EOL;
-
+//
 exit(0);
